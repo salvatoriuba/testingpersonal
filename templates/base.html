@@ -1,19 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--FAVICON-->
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='images/LOGO-ICON.png') }}"
+      type="image/x-icon"
+    />
+    <!--STYLESHEETS-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/base.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/components.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/layout.css') }}" />
     <title>{% block title %}{% endblock %}</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header -->
     <header>
-        <!-- Navigation -->
-        <nav></nav>
+      <!-- Navigation -->
+      <nav>
+        <div class="logo">
+          <a href="/">
+            <img
+              src="{{ url_for ('static', filename='images/LOGO.png')}}"
+              alt="Logo Bugbusters"
+            />
+          </a>
+        </div>
+        <button class="hamburger" aria-label="Menú">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">HOME</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">NOSOTROS</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">HABITACIONES</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">SERVICIOS</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <!-- Main Content -->
     <main>{% block content %}{% endblock %}</main>
     <!-- Footer -->
     <footer></footer>
-</body>
+    <script src="{{ url_for('static', filename='scripts/script.js') }}"></script>
+  </body>
 </html>
