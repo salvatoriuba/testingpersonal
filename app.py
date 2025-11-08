@@ -10,5 +10,9 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
+@app.route("/contacto", methods=['GET', 'POST'])
+def  contacto():
+    return 
+
 if __name__ == "__main__":
     app.run("localhost", 3000, debug=True)
