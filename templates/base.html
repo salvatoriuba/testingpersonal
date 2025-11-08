@@ -30,6 +30,10 @@
       rel="stylesheet"
       href="{{ url_for('static', filename='styles/layout.css') }}"
     />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles/form.css') }}"
+    />
     <title>{% block title %}{% endblock %}</title>
   </head>
   <body>
@@ -64,7 +68,7 @@
             <a class="nav__link" href="#">SERVICIOS</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">CONTACTO</a>
+            <a class="nav__link" href="{{ url_for('contacto') }}">CONTACTO</a>
           </li>
         </ul>
       </nav>
