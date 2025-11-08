@@ -33,7 +33,7 @@ DATA: Dict[str, List[Any]] = {
             - **Especificaciones:** Baño revestido en mármol, equipado con bañera de hidromasaje y ducha escocesa separada.
             - **Lujos:** Smart TV curvo de 60", sistema de sonido Bluetooth, y acceso exclusivo a nuestro 'Executive Lounge' (desayuno privado y cócteles de cortesía por la tarde).
             """,
-            "galeria": "['/images/tipo_habitacion/', '/images/tipo_habitacion/', '/images/tipo_habitacion/']"
+            "galeria": "['/images/tipo_habitacion/junior/junior-1.jpg', '/images/tipo_habitacion/junior/junior-2.jpg', '/images/tipo_habitacion/junior/junior-3.jpg', '/images/tipo_habitacion/junior/junior-4.jpg']"
         },
         {
             "id": 4,
@@ -44,7 +44,7 @@ DATA: Dict[str, List[Any]] = {
             - **Especificaciones:** La legendaria cama King Size redonda (2.20m diámetro) con sábanas de seda y un discreto (pero estratégico) espejo en el techo.
             - **Lujos:** El protagonista es el jacuzzi doble con cromoterapia situado DENTRO del dormitorio, junto a un ventanal con vistas a la ciudad. Incluye 'Kit Romántico' de bienvenida (botella de champagne, fresas con chocolate y aceites de masaje). Sistema de sonido envolvente con playlist 'Reavivando la Llama' pre-cargada. Privacidad 100% garantizada.
             """,
-            "galeria": "['/images/tipo_habitacion/', '/images/tipo_habitacion/', '/images/tipo_habitacion/']"
+            "galeria": "['/images/tipo_habitacion/parejas/parejas-1.jpg', '/images/tipo_habitacion/parejas/parejas-2.jpg', '/images/tipo_habitacion/parejas/parejas-3.jpg']"
         }
     ],
     "servicio": [{}, {}],
