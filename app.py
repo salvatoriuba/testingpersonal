@@ -19,5 +19,9 @@ def habitaciones():
 def  contacto():
     return 
 
+@app.route("/servicios")
+def servicios():
+    return render_template("servicios.html", servicios=hardcoded_data.DATA["servicio"])
+
 if __name__ == "__main__":
     app.run("localhost", 3000, debug=True)
